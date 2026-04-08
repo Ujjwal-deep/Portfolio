@@ -1,0 +1,217 @@
+{
+  "user": {
+    "name": {
+      "first": "UJJWAL",
+      "last": "DEEP"
+    },
+    "tagline": "Data Scientist · ML Engineer",
+    "description": "$ Building ML pipelines, computer vision systems, and production-ready AI applications that work at scale.",
+    "status": "OPEN TO WORK",
+    "about": {
+      "heading": "Engineering <span>intelligence</span> into everything I build.",
+      "paragraphs": [
+        "I'm a final-year Data Science student at Ramaiah University, Bengaluru. I work at the intersection of machine learning, backend engineering, and data — building systems that go from raw data to production-ready insights.",
+        "My internship at the Centre for National Security Studies involved real computer vision work: curating massive datasets, implementing transfer learning pipelines, and benchmarking models for deployment. On the side I've built a Bundesliga prediction engine and a full RAG system on AWS Bedrock.",
+        "I'm comfortable across the full stack — from FastAPI and Supabase on the backend to React on the frontend — but ML and data pipelines are where I'm most at home."
+      ],
+      "stats": [
+        {
+          "number": "1",
+          "label": "YEARS EXPERIENCE"
+        },
+        {
+          "number": "3",
+          "label": "CERTIFICATIONS"
+        },
+        {
+          "number": "5+",
+          "label": "PROJECTS BUILT"
+        },
+        {
+          "number": "∞",
+          "label": "BUGS SQUASHED"
+        }
+      ]
+    },
+    "contact": {
+      "message": "Open to full-time roles, internships, and interesting collaborations in data science, ML engineering, and backend development. Based in Bengaluru — remote-capable.",
+      "resumeLink": "https://drive.google.com/your-resume-link-here",
+      "links": [
+        {
+          "label": "Email",
+          "value": "ujjwaldeep02@gmail.com",
+          "url": "mailto:ujjwaldeep02@gmail.com"
+        },
+        {
+          "label": "GitHub",
+          "value": "github.com/Ujjwal-deep",
+          "url": "https://github.com/Ujjwal-deep"
+        },
+        {
+          "label": "LinkedIn",
+          "value": "linkedin.com/in/UjjwalDeep",
+          "url": "https://www.linkedin.com/in/ujjwal-deep02"
+        },
+        {
+          "label": "Phone",
+          "value": "+91 63639 54579",
+          "url": "tel:+916363954579"
+        }
+      ]
+    }
+  },
+  "whoami": {
+    "name": "Ujjwal Deep",
+    "role": "Data Scientist",
+    "location": "Bengaluru, IN",
+    "education": "BSc (Hons) Data Science & Analytics",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "React",
+      "AWS",
+      "Supabase",
+      "SQL"
+    ],
+    "speciality": "CV + RAG + ML",
+    "openToWork": true
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        "Python",
+        "JavaScript",
+        "R",
+        "SQL"
+      ]
+    },
+    {
+      "category": "ML / AI",
+      "items": [
+        "Deep Learning",
+        "Transfer Learning",
+        "Computer Vision",
+        "NLP",
+        "Time Series Analysis",
+        "Ensemble Models"
+      ]
+    },
+    {
+      "category": "Backend & Cloud",
+      "items": [
+        "FastAPI · Django",
+        "AWS (S3, EC2, Bedrock, IAM)",
+        "Supabase · MongoDB · MySQL",
+        "Render · Vercel",
+        "React (frontend)",
+        "Git / GitHub"
+      ]
+    },
+    {
+      "category": "Data & Viz",
+      "items": [
+        "Power BI",
+        "Tableau",
+        "Excel"
+      ]
+    },
+    {
+      "category": "ML Frameworks",
+      "items": [
+        "TensorFlow / Keras",
+        "Scikit-learn",
+        "Optuna (HPO)",
+        "Sentence Transformers",
+        "MobileNetV2 / ImageNet"
+      ]
+    },
+    {
+      "category": "Domains",
+      "items": [
+        "RAG Systems",
+        "Computer Vision",
+        "Sports Analytics",
+        "HR Analytics",
+        "Dashboard Design"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "number": "01",
+      "name": "SPIELTAG — BUNDESLIGA PREDICTOR",
+      "description": "Stacking ensemble ML architecture with Optuna hyperparameter tuning. Aggregated 10 seasons of xG JSON, CSV, and REST API data into a unified training set. Meta-model: Multinomial Logistic Regression (Log Loss: 0.9702). Live React dashboard powered by Supabase real-time backend.",
+      "tags": [
+        "Python",
+        "Optuna",
+        "React",
+        "Supabase",
+        "ML Ensembles",
+        "REST APIs"
+      ],
+      "type": "ML · Sports Analytics",
+      "link": "https://github.com/Ujjwal-deep/spieltag"
+    },
+    {
+      "number": "02",
+      "name": "RAG APPLICATION",
+      "description": "Production-style Retrieval-Augmented Generation system using FastAPI. Sentence-transformer embeddings with top-K context selection for cost-aware inference. Integrated AWS Bedrock (Titan LLM) with secure IAM roles and async inference. Full-stack monorepo — backend on Render, frontend on Vercel.",
+      "tags": [
+        "FastAPI",
+        "AWS Bedrock",
+        "Supabase",
+        "Sentence Transformers",
+        "Python"
+      ],
+      "type": "AI · Backend · Fullstack",
+      "link": "https://github.com/Ujjwal-deep/RAG-project"
+    }
+  ],
+  "experience": [
+    {
+      "period": "Aug 2024 – Apr 2025",
+      "company": "Centre for National<br>Security Studies",
+      "location": "Bengaluru, India",
+      "role": "ML / Data Science Intern",
+      "bullets": [
+        "Engineered a <strong>100K+ image dataset</strong> for human detection by programmatically curating and processing the COCO dataset.",
+        "Applied bounding box annotations and systematic augmentations, improving model accuracy by <strong>over 20%</strong>.",
+        "Evaluated and benchmarked <strong>3+ deep learning models</strong> on a 20K image sample to identify the optimal deployment architecture.",
+        "Implemented <strong>MobileNetV2 transfer learning</strong> (ImageNet), freezing base layers and customising the classifier — achieving <strong>92%+ accuracy</strong>.",
+        "Built interactive dashboards using <strong>Python and Power BI</strong> to deliver clear, actionable project metrics."
+      ]
+    },
+    {
+      "period": "Aug 2022 – May 2026",
+      "company": "Ramaiah University<br>of Applied Sciences",
+      "location": "Bengaluru, India",
+      "role": "BSc (Hons) Data Science & Analytics",
+      "bullets": [
+        "CGPA: <strong>9.18</strong> — graduating May 2026.",
+        "Coursework spanning ML, deep learning, statistical modelling, time series analysis, and data engineering.",
+        "Built and shipped production-ready ML and fullstack projects as part of coursework and independent study."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "icon": "📈",
+      "name": "Tableau",
+      "description": "Data visualization, dashboard development, calculated fields, and data storytelling.",
+      "link": "https://drive.google.com/file/d/1r5_9fV2UD-yWRIVM5La_a_HoD8TbSMaZ/view?usp=sharing"
+    },
+    {
+      "icon": "👥",
+      "name": "HR Analytics",
+      "description": "Workforce KPIs — attrition, retention, performance. Applied Excel and Power BI for people analytics insights.",
+      "link": "https://drive.google.com/file/d/1LGFcsO4X4bXRYhaz8F1riWX6glx-kIzy/view?usp=sharing"
+    },
+    {
+      "icon": "☁️",
+      "name": "Python for Data Science and Machine Learning",
+      "description": "Python for data analysis and machine learning — data cleaning, visualization, and building models using Pandas, NumPy, and scikit-learn.",
+      "link": "https://drive.google.com/file/d/1m1tpSuCPcWNtpA1WPdG3rGhhQ99d2oeR/view?usp=sharing"
+    }
+  ]
+}
