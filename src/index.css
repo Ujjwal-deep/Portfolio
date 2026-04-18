@@ -134,6 +134,12 @@ body::after {
   padding: 0 40px;
 }
 
+@media (max-width: 768px) {
+  .layout {
+    padding: 0 24px;
+  }
+}
+
 /* ─── NAV ─── */
 nav {
   position: fixed;
@@ -207,6 +213,32 @@ nav {
 
 .nav-links a:hover {
   color: var(--accent);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-toggle .bar {
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-active .nav-toggle .bar:nth-child(1) {
+  transform: translateY(3.5px) rotate(45deg);
+}
+
+.nav-active .nav-toggle .bar:nth-child(2) {
+  transform: translateY(-3.5px) rotate(-45deg);
 }
 
 /* ─── HERO ─── */
@@ -289,6 +321,7 @@ nav {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
+  max-width: 100%;
 }
 
 @keyframes fadeSlideUp {
@@ -976,7 +1009,162 @@ footer {
   color: var(--accent);
 }
 
-/* Cursor link hover overrides */
-.hoverable:hover {
-  /* This is managed by the custom cursor component via React context or state, or globally */
+/* ─── MEDIA QUERIES ─── */
+
+@media (max-width: 1024px) {
+  body { cursor: auto; }
+  .cursor, .cursor-dot { display: none; }
+  a, button, .btn-primary, .btn-secondary, .nav-links a, .project-link, .contact-link {
+    cursor: pointer !important;
+  }
+  
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+    padding-top: 140px;
+  }
+
+  .hero-eyebrow { justify-content: center; }
+  .hero-desc { margin-left: auto; margin-right: auto; }
+  .hero-cta { justify-content: center; }
+  
+  .skills-grid, .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 24px;
+  }
+
+  .nav-status {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 501;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    font-size: 24px;
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+
+  .hero-name {
+    font-size: clamp(48px, 12vw, 80px);
+    letter-spacing: -2px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 32px 24px;
+  }
+
+  .project-number {
+    font-size: 24px;
+  }
+
+  .project-meta {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+
+  .project-links {
+    justify-content: flex-start;
+  }
+
+  .exp-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 32px 24px;
+  }
+
+  .contact-heading {
+    font-size: clamp(36px, 10vw, 56px);
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid, .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terminal-body {
+    padding: 16px;
+    font-size: 11px;
+    overflow-x: auto;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stat-block {
+    padding: 24px 16px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
 }

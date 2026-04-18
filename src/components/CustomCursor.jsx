@@ -7,6 +7,14 @@ const CustomCursor = () => {
 
     if (!cursor || !dot) return;
 
+    // Disable custom cursor on touch devices
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+      cursor.style.display = 'none';
+      dot.style.display = 'none';
+      document.body.style.cursor = 'auto';
+      return;
+    }
+
     const onMouseMove = (e) => {
       cursor.style.left = e.clientX + 'px';
       cursor.style.top = e.clientY + 'px';
