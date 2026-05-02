@@ -37,9 +37,18 @@ const Hero = ({ data, whoami }) => {
           &nbsp;&nbsp;<span className="t-key">"location"</span>: <span className="t-string">"{whoami.location}"</span>,<br />
           &nbsp;&nbsp;<span className="t-key">"education"</span>: <span className="t-string">"{whoami.education}"</span>,<br />
           &nbsp;&nbsp;<span className="t-key">"stack"</span>: [<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;<span className="t-string">"{whoami.stack[0]}"</span>, <span className="t-string">"{whoami.stack[1]}"</span>,<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;<span className="t-string">"{whoami.stack[2]}"</span>, <span className="t-string">"{whoami.stack[3]}"</span>,<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;<span className="t-string">"{whoami.stack[4]}"</span>, <span className="t-string">"{whoami.stack[5]}"</span><br />
+          {Array.from({ length: Math.ceil(whoami.stack.length / 2) }, (_, i) => {
+            const item1 = whoami.stack[i * 2];
+            const item2 = whoami.stack[i * 2 + 1];
+            return (
+              <React.Fragment key={i}>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className="t-string">"{item1}"</span>
+                {item2 ? <>, <span className="t-string">"{item2}"</span></> : ''}
+                {i < Math.ceil(whoami.stack.length / 2) - 1 ? ',' : ''}
+                <br />
+              </React.Fragment>
+            );
+          })}
           &nbsp;&nbsp;],<br />
           &nbsp;&nbsp;<span className="t-key">"speciality"</span>: <span className="t-string">"{whoami.speciality}"</span>,<br />
           &nbsp;&nbsp;<span className="t-key">"openToWork"</span>: <span className="t-num">{whoami.openToWork.toString()}</span><br />

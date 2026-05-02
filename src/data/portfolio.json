@@ -4,15 +4,15 @@
       "first": "UJJWAL",
       "last": "DEEP"
     },
-    "tagline": "Data Scientist · ML Engineer",
-    "description": "$ Building ML pipelines, computer vision systems, and production-ready AI applications that work at scale.",
+    "tagline": "Data Scientist · Analytics Engineer",
+    "description": "$ Building data pipelines, analytics systems, and reporting solutions that turn raw data into decisions.",
     "status": "OPEN TO WORK",
     "about": {
       "heading": "Engineering <span>intelligence</span> into everything I build.",
       "paragraphs": [
-        "I'm a final-year Data Science student at Ramaiah University, Bengaluru. I work at the intersection of machine learning, backend engineering, and data — building systems that go from raw data to production-ready insights.",
-        "My internship at the Centre for National Security Studies involved real computer vision work: curating massive datasets, implementing transfer learning pipelines, and benchmarking models for deployment. On the side I've built a Bundesliga prediction engine and a full RAG system on AWS Bedrock.",
-        "I'm comfortable across the full stack — from FastAPI and Supabase on the backend to React on the frontend — but ML and data pipelines are where I'm most at home."
+        "I'm a final-year Data Science student at Ramaiah University, Bengaluru, working at the intersection of analytics, risk reporting, and data engineering — building systems that turn raw data into production-ready insights.",
+        "Most recently I've been building a forensic analytics platform at GAFA simulating real-world AML and compliance workflows — covering everything from risk reporting pipelines and sanctions screening to audit trails and dashboards. My earlier internship at the Centre for National Security Studies involved large-scale dataset engineering and delivering operational insights through Tableau and Power BI.",
+        "I'm comfortable across the full stack — FastAPI, Supabase, React — but data pipelines, reporting automation, and analytics are where I'm most at home."
       ],
       "stats": [
         {
@@ -34,8 +34,8 @@
       ]
     },
     "contact": {
-      "message": "Open to full-time roles, internships, and interesting collaborations in data science, ML engineering, and backend development. Based in Bengaluru — remote-capable.",
-      "resumeLink": "https://drive.google.com/file/d/18LTC4LQVxiimCyaVjgXAo2ZqOGA4WoWr/view?usp=sharing",
+      "message": "Open to full-time roles, internships, and interesting collaborations in data science, ML engineering, and risk analytics. Based in Bengaluru — remote-capable.",
+      "resumeLink": "https://drive.google.com/file/d/14aYz5RRN2n86d9yMFFZlW1kFKQ9imP0b/view?usp=sharing",
       "links": [
         {
           "label": "Email",
@@ -71,9 +71,11 @@
       "React",
       "AWS",
       "Supabase",
-      "SQL"
+      "SQL",
+      "Excel",
+      "Power BI"
     ],
-    "speciality": "CV + RAG + ML",
+    "speciality": "Analytics · Reporting · ML",
     "openToWork": true
   },
   "skills": [
@@ -132,7 +134,7 @@
         "RAG Systems",
         "Computer Vision",
         "Sports Analytics",
-        "HR Analytics",
+        "Risk Analytics",
         "Dashboard Design"
       ]
     }
@@ -169,6 +171,19 @@
     }
   ],
   "experience": [
+    {
+      "period": "Jan 2026 – Present",
+      "company": "Global Association of Forensic Accountants (GAFA)",
+      "location": "Bengaluru, India",
+      "role": "Intern",
+      "bullets": [
+        "Built a <strong>full-stack AML training platform</strong> simulating Financial Intelligence Unit workflows for forensic accounting students, using <strong>React, Express.js, FastAPI, and Supabase</strong>.",
+        "Engineered an <strong>8-rule AML detection engine</strong> in Python processing <strong>100K+ transactions</strong>, implementing rules for Structuring, Layering (graph cycle detection), Velocity Spikes, and Geographic Risk.",
+        "Developed an <strong>unsupervised ML ensemble</strong> (Isolation Forest + K-Means) with <strong>SHAP explainability</strong> for transaction anomaly scoring, producing tri-level risk classification per transaction.",
+        "Integrated <strong>live sanctions screening</strong> against 100+ global watchlists (OFAC, UN, EU, HMT) and built an end-to-end SAR case management workflow with <strong>in-browser PDF report generation</strong>.",
+        "Implemented <strong>JWT-based RBAC</strong> across 4 user roles with per-user data isolation, ensuring each trainee operates in a sandboxed environment with an <strong>HMAC-signed audit log</strong> for tamper-evident record keeping."
+      ]
+    },
     {
       "period": "Aug 2024 – Apr 2025",
       "company": "Centre for National<br>Security Studies",
