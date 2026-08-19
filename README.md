@@ -65,4 +65,3 @@ npm run build
 The output will be in the `dist/` directory, ready to be deployed to any static hosting service.
 
 ---
-Built by **Antigravity** for **Ujjwal Deep**.
