@@ -10,9 +10,9 @@
     "about": {
       "heading": "Engineering <span>intelligence</span> into everything I build.",
       "paragraphs": [
-        "I'm a final-year Data Science student at Ramaiah University, Bengaluru, working at the intersection of analytics, risk reporting, and data engineering — building systems that turn raw data into production-ready insights.",
-        "Most recently I've been building a forensic analytics platform at GAFA simulating real-world AML and compliance workflows — covering everything from risk reporting pipelines and sanctions screening to audit trails and dashboards. My earlier internship at the Centre for National Security Studies involved large-scale dataset engineering and delivering operational insights through Tableau and Power BI.",
-        "I'm comfortable across the full stack — FastAPI, Supabase, React — but data pipelines, reporting automation, and analytics are where I'm most at home."
+        "I'm a Data Science graduate from Ramaiah University, Bengaluru, working at the intersection of data engineering, machine learning, and analytics. I enjoy building systems that turn raw, complex data into reliable pipelines, useful insights, and intelligent applications.",
+        "Currently, I'm an Azure Data Science Intern at Cloudalytix, working with Microsoft Fabric and its data ecosystem across OneLake, Lakehouse, Data Factory, Warehouses, and Power BI. I'm also a Microsoft certified Fabric Data Engineer Associate.",
+        "My projects span applied machine learning, large-scale data processing, and analytics, including an AML platform processing 100K+ transactions and a probabilistic Bundesliga prediction system built with ensemble learning and time-series validation. I'm most comfortable working with Python, SQL, FastAPI, Supabase, Microsoft Fabric, and AWS."
       ],
       "stats": [
         {
@@ -67,12 +67,12 @@
     "education": "BSc (Hons) Data Science & Analytics",
     "stack": [
       "Python",
+      "Microsoft Fabric",
       "FastAPI",
       "React",
       "AWS",
       "Supabase",
       "SQL",
-      "Excel",
       "Power BI"
     ],
     "speciality": "Analytics · Reporting · ML",
@@ -113,6 +113,7 @@
     {
       "category": "Data & Viz",
       "items": [
+        "Microsoft Fabric",
         "Power BI",
         "Tableau",
         "Excel"
@@ -172,7 +173,18 @@
   ],
   "experience": [
     {
-      "period": "Jan 2026 – Present",
+      "period": "June 2026 – Present",
+      "company": "Cloudalytix Tech Solutions LLP",
+      "location": "Bengaluru, India",
+      "role": "Azure Data Science Intern",
+      "bullets": [
+        "Built and executed <strong>data integration and transformation pipelines</strong> using <strong>Microsoft Fabric components</strong>, working with structured data across ingestion and analytics workflows.",
+        "Applied <strong>data modeling and transformation concepts</strong> to prepare data for reporting and analysis using <strong>Microsoft Fabric and Power BI</strong>.",
+        "Gained practical experience with <strong>Azure cloud infrastructure and data services</strong>."
+      ]
+    },
+    {
+      "period": "Jan 2026 – May 2026",
       "company": "Global Association of Forensic Accountants (GAFA)",
       "location": "Bengaluru, India",
       "role": "Intern",
@@ -211,19 +223,21 @@
   ],
   "certifications": [
     {
-      "icon": "📈",
+      "iconType": "fabric",
+      "name": "DP-700: Microsoft Fabric Data Engineer Associate",
+      "badge": "MICROSOFT CERTIFIED PROFESSIONAL",
+      "highlight": true,
+      "description": "Enterprise data engineering on Microsoft Fabric — lakehouse architecture, data integration pipelines, Medallion storage (Delta Lake), real-time analytics, and Power BI semantic models.",
+      "link": "https://learn.microsoft.com/api/credentials/share/en-us/ujjwaldeep-6160/C4FDC7A9C57F6211?sharingId=4490C7308618628"
+    },
+    {
+      "iconType": "tableau",
       "name": "Tableau",
       "description": "Data visualization, dashboard development, calculated fields, and data storytelling.",
       "link": "https://drive.google.com/file/d/1r5_9fV2UD-yWRIVM5La_a_HoD8TbSMaZ/view?usp=sharing"
     },
     {
-      "icon": "👥",
-      "name": "HR Analytics",
-      "description": "Workforce KPIs — attrition, retention, performance. Applied Excel and Power BI for people analytics insights.",
-      "link": "https://drive.google.com/file/d/1LGFcsO4X4bXRYhaz8F1riWX6glx-kIzy/view?usp=sharing"
-    },
-    {
-      "icon": "☁️",
+      "iconType": "python",
       "name": "Python for Data Science and Machine Learning",
       "description": "Python for data analysis and machine learning — data cleaning, visualization, and building models using Pandas, NumPy, and scikit-learn.",
       "link": "https://drive.google.com/file/d/1m1tpSuCPcWNtpA1WPdG3rGhhQ99d2oeR/view?usp=sharing"

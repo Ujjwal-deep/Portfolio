@@ -844,7 +844,7 @@ nav {
 .cert-cell {
   background: var(--bg);
   padding: 32px;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -869,10 +869,59 @@ nav {
   background: var(--accent2);
 }
 
+.cert-cell.cert-highlight {
+  background: var(--bg);
+}
+
+.cert-cell.cert-highlight::before {
+  background: var(--accent);
+}
+
+.cert-cell.cert-highlight:hover {
+  background: var(--bg2);
+}
+
+.cert-featured-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.cert-featured-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 .cert-icon {
   font-size: 28px;
   margin-bottom: 16px;
   display: block;
+}
+
+.cert-svg-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.cert-cell:hover .cert-svg-icon {
+  color: var(--accent2);
+  transform: translateY(-2px);
 }
 
 .cert-name {
@@ -887,6 +936,14 @@ nav {
   font-size: 12px;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 11px;
 }
 
 /* ─── CONTACT ─── */
